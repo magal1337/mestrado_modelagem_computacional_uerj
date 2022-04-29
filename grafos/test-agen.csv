@@ -1,0 +1,43 @@
+id_agendamento,codigopaciente,codigoprestador,dataagendamento,tipoagendamento,status,codigoatendimento,estabelecimento,origempaciente
+1,47964508,3127242,2019-11-22T09:45:00,Consulta,Done,11276129,SanteCorp,Fleury
+2,47964508,3127242,2019-11-22T09:45:00,Consulta,Done,11284757,SanteCorp,Fleury
+3,48221997,3127242,2019-11-22T09:30:00,Primeira Consulta,Done,11270956,SanteCorp,Fleury
+4,47965396,3127243,2019-10-17T11:00:00,Retorno,Done,10838581,SanteCorp,Fleury
+5,48242660,3127243,2019-12-02T09:00:00,Retorno,Done,11340524,SanteCorp,Fleury
+6,48242674,3127243,2019-12-02T09:30:00,Retorno,Done,11336622,SanteCorp,Fleury
+7,48242660,3127243,2019-12-02T09:00:00,Retorno,Done,11335921,SanteCorp,Fleury
+8,47964673,3127243,2019-11-19T09:30:00,Consulta,Done,11275829,SanteCorp,Fleury
+9,48172954,3127243,2019-11-11T08:30:00,Primeira Consulta,Done,11197413,SanteCorp,Fleury
+10,47963016,3127243,2019-11-12T10:00:00,Primeira Consulta,Done,11209345,SanteCorp,Fleury
+11,47963078,3127243,2019-11-05T08:30:00,Primeira Consulta,Done,11127398,SanteCorp,Fleury
+12,48242660,3127243,2019-11-28T14:30:00,Primeira Consulta,Done,11321784,SanteCorp,Fleury
+13,47962452,3127243,2019-11-11T11:30:00,Primeira Consulta,Done,11199138,SanteCorp,Fleury
+14,48211990,3127243,2019-11-21T08:30:00,Primeira Consulta,Done,11264903,SanteCorp,Fleury
+15,47963070,3127243,2019-11-05T11:00:00,Primeira Consulta,Done,11129339,SanteCorp,Fleury
+16,47963727,3127243,2019-11-07T11:30:00,Primeira Consulta,Done,11159799,SanteCorp,Fleury
+17,48242674,3127243,2019-11-28T15:00:00,Primeira Consulta,Done,11325554,SanteCorp,Fleury
+18,47962452,3127243,2019-11-11T11:30:00,Primeira Consulta,Done,11200973,SanteCorp,Fleury
+19,47963415,3127243,2019-11-11T09:00:00,Primeira Consulta,Done,11200994,SanteCorp,Fleury
+20,48173031,3127243,2019-11-12T10:30:00,Primeira Consulta,Done,11297983,SanteCorp,Fleury
+21,47963415,3127243,2019-11-11T09:00:00,Primeira Consulta,Done,11197778,SanteCorp,Fleury
+22,47963016,3127243,2019-11-12T10:00:00,Primeira Consulta,Done,11211721,SanteCorp,Fleury
+23,47964568,3127243,2019-10-28T09:15:00,Primeira Consulta,Done,10996708,SanteCorp,Fleury
+24,47963078,3127243,2019-11-05T08:30:00,Primeira Consulta,Done,11129016,SanteCorp,Fleury
+25,48143407,3127243,2019-11-05T09:00:00,Primeira Consulta,Done,11130007,SanteCorp,Fleury
+26,47964333,3127243,2019-11-12T11:00:00,Primeira Consulta,Done,11211830,SanteCorp,Fleury
+27,48124877,3127243,2019-11-01T10:30:00,Primeira Consulta,Done,11080250,SanteCorp,Fleury
+28,48172954,3127243,2019-11-11T08:30:00,Primeira Consulta,Done,11201200,SanteCorp,Fleury
+29,47963017,3127243,2019-11-01T10:00:00,Primeira Consulta,Done,11078464,SanteCorp,Fleury
+30,47964333,3127243,2019-11-12T11:00:00,Primeira Consulta,Done,11210488,SanteCorp,Fleury
+31,47962396,3127243,2019-10-28T08:30:00,Primeira Consulta,Done,10996488,SanteCorp,Fleury
+32,47962452,3127243,2019-11-11T11:30:00,Primeira Consulta,Done,11199642,SanteCorp,Fleury
+33,47963078,3127243,2019-11-05T08:30:00,Primeira Consulta,Done,11126441,SanteCorp,Fleury
+34,47963017,3127243,2019-11-01T10:00:00,Primeira Consulta,Done,11079404,SanteCorp,Fleury
+35,48211990,3127243,2019-11-21T08:30:00,Primeira Consulta,Done,11275274,SanteCorp,Fleury
+36,47964568,3127243,2019-10-28T09:15:00,Primeira Consulta,Done,10997730,SanteCorp,Fleury
+37,48143407,3127243,2019-11-05T09:00:00,Primeira Consulta,Done,11128845,SanteCorp,Fleury
+38,47964673,3127243,2019-10-31T08:00:00,Primeira Consulta,Done,11057017,SanteCorp,Fleury
+39,47964370,3127243,2019-11-18T08:30:00,Primeira Consulta,Done,11242248,SanteCorp,Fleury
+40,48173031,3127243,2019-11-12T10:30:00,Primeira Consulta,Done,11209939,SanteCorp,Fleury
+41,48066392,3127243,2019-10-28T09:00:00,Primeira Consulta,Done,10997612,SanteCorp,Fleury
+42,48173031,3127243,2019-11-12T10:30:00,Primeira Consulta,Done,11211283,SanteCorp,Fleury

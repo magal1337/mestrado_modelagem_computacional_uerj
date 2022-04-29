@@ -1,0 +1,132 @@
+idatendimento,idpaciente,diagnostico,status
+11319433,47965396,Hipertensão sem complicações,Resolvido
+11321292,48195185,Assistência materna por outras complicações ligadas predominantemente à gravidez,Resolvido
+11129525,47963070,Tosse,Confirmado
+11134056,47965614,Sem doença,Confirmado
+11324734,48195203,Outras artroses,Confirmado
+11337574,48195174,Bursite do ombro,Confirmado
+11338718,48195257,Doença celíaca,Confirmado
+11079404,47963017,Lesões do ombro,Confirmado
+11340925,48195410,Exame médico geral,Confirmado
+11340482,48195278,Exame médico geral,Confirmado
+11309727,48236485,Sinovite e tenossinovite,Confirmado
+11324543,48195186,Alergia não especificada,Confirmado
+11337574,48195174,Síndrome do túnel do carpo,Confirmado
+11277593,48195224,Bursite/tendinite/sinovite NE,Confirmado
+11340379,48195279,Outros episódios depressivos,Confirmado
+11338772,48195426,Supervisão de gravidez normal,Confirmado
+11057777,47965396,Hipertensão sem complicações,Confirmado
+11220569,48195139,Neoplasia maligna mama feminina,Confirmado
+11320695,48195170,Outros estados pós-cirúrgicos,Confirmado
+11275274,48211990,Cuidado médico não especificado,Confirmado
+11221098,48195236,Aconselhamento/escuta terapêutica,Confirmado
+11199642,47962452,Hipertensão essencial (primária),Confirmado
+11149635,48143187,Neoplasia benigna do ap. urinário,Confirmado
+11222942,48195140,Vómitos/náuseas durante gravidez,Confirmado
+11324734,48195203,Diabetes mellitus não especificado,Confirmado
+11337574,48195174,Transtornos da ansiedade orgânicos,Confirmado
+11284580,47964370,Transtorno ansioso não especificado,Confirmado
+11328135,48236492,Outras síndromes de algias cefálicas,Confirmado
+11340773,48195284,"Parto por cesariana, não especificada",Confirmado
+11129016,47963078,Exame ginecológico (geral) (de rotina),Confirmado
+11215454,48195242,Síndrome vertebral com irradiação dor,Confirmado
+11147588,48143169,Outra doença do ap. músculo-esquelético,Confirmado
+11338093,48195455,Outros transtornos de discos intervertebrais,Confirmado
+11199642,47962452,Diabetes mellitus não-insulino-dependente - sem complicações,Confirmado
+11199642,47962452,Distúrbios do metabolismo de lipoproteínas e outras lipidemias,Confirmado
+11211830,47964333,Exame geral e investigação de pessoas sem queixas ou diagnóstico relatado,Confirmado
+11080250,48124877,Exame geral e investigação de pessoas sem queixas ou diagnóstico relatado,Confirmado
+11160147,47963727,Exame geral e investigação de pessoas sem queixas ou diagnóstico relatado,Confirmado
+10997730,47964568,Exame geral e investigação de pessoas sem queixas ou diagnóstico relatado,Confirmado
+11197413,48172954,Anemia,Antecendente
+11159799,47963727,Anemia,Antecendente
+11057017,47964673,Ansidade,Antecendente
+10996211,47962396,Gastrite,Antecendente
+11199138,47962452,Gastrite,Antecendente
+11210488,47964333,Sinusite,Antecendente
+10804098,47932243,Obesidade,Antecendente
+10838581,47965396,Obesidade,Antecendente
+11126441,47963078,Tendinite,Antecendente
+11148111,48143184,ansiedade,Antecendente
+11235972,47965396,Depressão,Antecendente
+11199138,47962452,Dislipidemia,Antecendente
+11325554,48242674,fissura anal,Antecendente
+11078464,47963017,Rinite alérgica,Antecendente
+11197778,47963415,Rinite alérgica,Antecendente
+11159799,47963727,Cisto na tireoide,Antecendente
+10996708,47964568,Diabetes Mellitus,Antecendente
+11209345,47963016,Diabetes Mellitus,Antecendente
+11197778,47963415,Diabetes Mellitus,Antecendente
+11130007,48143407,Nega comorbidades,Antecendente
+11209345,47963016,Depressão Ansiosa,Antecendente
+11264903,48211990,Obesidade mórbida,Antecendente
+11321784,48242660,Hipertensão arterial,Antecendente
+11319433,47965396,Hipertensão arterial,Antecendente
+11276129,47964508,Hérnia coluna lombar,Antecendente
+11129339,47963070,Sinusite crónica/aguda,Antecendente
+11325554,48242674,constipação intestinal,Antecendente
+11209939,47964015,menigioma no seio Cavernoso,Antecendente
+11322423,48195191,sangramento uterino anormal,Antecendente
+11209939,47964015,Tendinopatia patelar Joelho E,Antecendente
+11159799,47963727,Anemia por deficiência Vitamina B12,Antecendente
+11319433,47965396,Diabetes mellitus relacionado com a desnutrição - com complicações renais,Antecendente
+11222436,48195248,Gravidez,Confirmado
+11324543,48195186,Outras anemias,Confirmado
+11326855,48195203,Outras artroses,Confirmado
+11338406,48195451,Bursite do ombro,Confirmado
+11339925,48195276,Dor lombar baixa,Confirmado
+11057214,47964673,Dor lombar baixa,Confirmado
+11057214,47964673,Hérnia umbilical,Confirmado
+11339669,48195207,Gravidez confirmada,Confirmado
+11107660,47963043,Outros exames gerais,Confirmado
+11220745,48195238,Gravidez de alto risco,Confirmado
+11284580,47964370,Gastrite não especificada,Confirmado
+11221854,48195247,Perturbações depressivas,Confirmado
+11132975,48143178,Bursite/tendinite/sinovite NE,Confirmado
+11338718,48195257,Fratura de fadiga de vértebra,Confirmado
+11324296,48195177,Supervisão de gravidez normal,Confirmado
+11339925,48195276,Outros estados pós-cirúrgicos,Confirmado
+11277936,48195222,Distúrbio ansioso/estado ansiedade,Confirmado
+11148111,48143184,Distúrbio ansioso/estado ansiedade,Confirmado
+11127398,47963078,Exame ginecológico (geral) (de rotina),Confirmado
+11128845,48143407,Exame ginecológico (geral) (de rotina),Confirmado
+11319433,47965396,"Neoplasia maligna da orofaringe, não especificada",Confirmado
+11211283,47964015,Varizes dos membros inferiores sem úlcera ou inflamação,Confirmado
+11322423,48195191,"Sangramento anormal do útero ou da vagina, não especificado",Confirmado
+11202629,48172954,"Outras gastroenterites e colites especificadas, não-infecciosas",Confirmado
+11275829,47964673,Outros sintomas e sinais relativos aos sistemas nervoso e osteomuscular,Confirmado
+10997612,48066392,Exame geral e investigação de pessoas sem queixas ou diagnóstico relatado,Confirmado
+11235972,47965396,Exame geral e investigação de pessoas sem queixas ou diagnóstico relatado,Confirmado
+10996488,47962396,"Hérnia inguinal unilateral ou não especificada, sem obstrução ou gangrena",Confirmado
+11321498,48195189,Assistência materna por outras complicações ligadas predominantemente à gravidez,Confirmado
+11322962,48195194,Assistência materna por outras complicações ligadas predominantemente à gravidez,Confirmado
+11321784,48242660,DPOC,Antecendente
+11325554,48242674,varizes,Antecendente
+11321784,48242660,Ansidade,Antecendente
+11242248,47964370,Ansidade,Antecendente
+11078464,47963017,Enxaqueca,Antecendente
+11210488,47964333,Enxaqueca,Antecendente
+11339925,48195276,Obesidade,Antecendente
+11235972,47965396,Hipotireoidismo,Antecendente
+11264903,48211990,Rinite alérgica,Antecendente
+10838581,47965396,Diabetes Mellitus,Antecendente
+11078464,47963017,Diabetes Mellitus,Antecendente
+11199138,47962452,Diabetes Mellitus,Antecendente
+11264903,48211990,Hérnia umbilical,Antecendente
+11242248,47964370,Depressão Ansiosa,Antecendente
+11235972,47965396,Artrites Reumatóides,Antecendente
+11320695,48195170,Hipertensão arterial,Antecendente
+10838581,47965396,Hipertensão arterial,Antecendente
+11199138,47962452,Hipertensão arterial,Antecendente
+11339925,48195276,Hipertensão arterial,Antecendente
+11337574,48195174,Hipertensão arterial,Antecendente
+11197778,47963415,Hipertensão arterial,Antecendente
+11126441,47963078,Hérnia coluna lombar,Antecendente
+11197413,48172954,Retocolite Ulcerativa,Antecendente
+11132975,48143178,esporão do calcâneo,Antecendente
+11321292,48195185,Asma não especificada,Antecendente
+11159799,47963727,Deficiência vitamina D,Antecendente
+11209939,47964015,Nódulo benigno em mama E,Antecendente
+11197778,47963415,Arritmia Cardíaca (inespecífica),Antecendente
+11284757,47964508,Colelitíase,Hipótese diagnóstica
+11284757,47964508,Outras doenças pulmonares obstrutivas crônicas,Hipótese diagnóstica

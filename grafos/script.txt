@@ -1,0 +1,78 @@
+LOAD CSV WITH HEADERS FROM 'file:///test-aten.csv' AS row
+MERGE (event:Event {idAttendance: row.atendimento})
+  ON CREATE SET event.type = "attendance",
+  event.idPatient = row.codigopaciente,
+  event.idProvider = row.codigoprestador,
+  event.dh_creation = row.criacaoatendimento,
+  event.dh_finish = row.terminoatendimento,
+  event.protocol = row.protocolo;
+LOAD CSV WITH HEADERS FROM 'file:///test-agen.csv' AS row
+MERGE (event:Event {idSchedule: row.id_agendamento})
+  ON CREATE SET event.type = "schedule",
+  event.idPatient = row.codigopaciente,
+  event.idProvider = row.codigoprestador,
+  event.dh_creation = row.dataagendamento,
+  event.schedule_type = row.tipoagendamento,
+  event.status = row.status,
+  event.idAttendance = row.codigoatendimento,
+  event.origin = row.origempaciente,
+  event.protocol = row.protocolo;
+LOAD CSV WITH HEADERS FROM 'file:///test-diag.csv' AS row
+MERGE (event:Event {diagnostic: row.diagnostico,idAttendance: row.idatendimento})
+  ON CREATE SET event.status = row.status, event.type = "diagnostic";
+LOAD CSV WITH HEADERS FROM 'file:///test-med.csv' AS row
+MERGE (resource:Resource {idAttendance: row.atendimento,medicine: row.medicamentos})
+  ON CREATE SET resource.type = "medicine",
+  resource.idPatient = row.codigopaciente,
+  resource.data = row.data;
+LOAD CSV WITH HEADERS FROM 'file:///test-paci.csv' AS row
+MERGE (object:Object {idPatient: row.codigopaciente})
+  ON CREATE SET object.type = "patient",
+  object.gender = row.sexo;
+LOAD CSV WITH HEADERS FROM 'file:///test-pres.csv' AS row
+MERGE (actor:Actor {idProvider: row.codigoprestador})
+  ON CREATE SET actor.type = "doctor",
+  actor.speciality = row.especialidade;
+LOAD CSV WITH HEADERS FROM 'file:///test-paci.csv' AS row
+MERGE (context:Context {idPatient: row.codigopaciente})
+  ON CREATE SET context.type = "origin",
+  context.dt_birth = row.data_de_nascimento,
+  context.birth_origin = row.local_de_nascimento;
+LOAD CSV WITH HEADERS FROM 'file:///test-sint.csv' AS row
+MERGE (context:Context {idAttendance: row.atendimento,symptom: row.item})
+  ON CREATE SET context.type = "symptom",
+  context.session = row.sessao,
+  context.topic = row.topico,
+  context.obs = row.observacao;
+MATCH (a:Event),
+(d:Event)
+WHERE EXISTS (a.idAttendance) AND EXISTS (d.idAttendance) AND a.idAttendance=d.idAttendance AND a.type="attendance" AND d.type="diagnostic"
+CREATE (a)-[l:GENERATES]->(d);
+MATCH (a:Event),
+(r:Resource)
+WHERE EXISTS (a.idAttendance) AND EXISTS (r.idAttendance) AND a.idAttendance=r.idAttendance AND a.type="attendance"
+CREATE (a)-[l:REGISTER]->(r);
+MATCH (a:Event),
+(at:Event)
+WHERE EXISTS (a.idAttendance) AND EXISTS (at.idAttendance) AND a.idAttendance=at.idAttendance AND a.type="schedule" AND at.type="attendance"
+CREATE (a)-[l:GENERATES]->(at);
+MATCH (a:Actor),
+(at:Event)
+WHERE EXISTS (at.idAttendance) AND EXISTS (at.idProvider) AND a.idProvider=at.idProvider AND at.type="attendance"
+CREATE (a)-[l:DO]->(at);
+MATCH (o:Object),
+(a:Event)
+WHERE   EXISTS (a.idPatient) AND a.idPatient=o.idPatient AND a.type="schedule"
+CREATE (o)-[l:GENERATES]->(a);
+MATCH (o:Object),
+(c:Context)
+WHERE   EXISTS (o.idPatient) AND o.idPatient=c.idPatient AND c.type="origin"
+CREATE (o)-[l:WAS_BORN]->(c);
+MATCH (o:Object),
+(a:Event)
+WHERE   EXISTS (a.idPatient) AND a.idPatient=o.idPatient AND a.type="attendance"
+CREATE (o)-[l:ATTENDS]->(a);
+MATCH (a:Event),
+(c:Context)
+WHERE EXISTS (a.idAttendance) AND EXISTS (c.idAttendance) AND a.idAttendance=c.idAttendance AND a.type="attendance" AND c.type = "symptom"
+CREATE (a)-[l:REGISTER]->(c);
