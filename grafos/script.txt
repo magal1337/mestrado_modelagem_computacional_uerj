@@ -3,9 +3,10 @@ MERGE (event:Event {idAttendance: row.atendimento})
   ON CREATE SET event.type = "attendance",
   event.idPatient = row.codigopaciente,
   event.idProvider = row.codigoprestador,
-  event.dh_creation = row.criacaoatendimento,
+  event.dh_creation = row.inicioatendimento,
   event.dh_finish = row.terminoatendimento,
-  event.protocol = row.protocolo;
+  event.protocol = row.protocolo,
+  event.duration = row.duration;
 LOAD CSV WITH HEADERS FROM 'file:///test-agen.csv' AS row
 MERGE (event:Event {idSchedule: row.id_agendamento})
   ON CREATE SET event.type = "schedule",
@@ -59,7 +60,7 @@ CREATE (a)-[l:GENERATES]->(at);
 MATCH (a:Actor),
 (at:Event)
 WHERE EXISTS (at.idAttendance) AND EXISTS (at.idProvider) AND a.idProvider=at.idProvider AND at.type="attendance"
-CREATE (a)-[l:DO]->(at);
+CREATE (a)-[l:DO {duration: at.duration}]->(at);
 MATCH (o:Object),
 (a:Event)
 WHERE   EXISTS (a.idPatient) AND a.idPatient=o.idPatient AND a.type="schedule"
@@ -76,3 +77,23 @@ MATCH (a:Event),
 (c:Context)
 WHERE EXISTS (a.idAttendance) AND EXISTS (c.idAttendance) AND a.idAttendance=c.idAttendance AND a.type="attendance" AND c.type = "symptom"
 CREATE (a)-[l:REGISTER]->(c);
+
+
+########## PAGE RANK SCRIPTS #############
+
+CALL gds.graph.project(
+  'pageRank2',
+  ['Actor','Event'],
+  'DO',
+  {
+    relationshipProperties: 'duration'
+  }
+);
+
+CALL gds.pageRank.stream('pageRank2')
+YIELD nodeId, score
+WHERE EXISTS(gds.util.asNode(nodeId).idProvider)
+RETURN gds.util.asNode(nodeId).idProvider AS name, score
+ORDER BY name;
+
+
